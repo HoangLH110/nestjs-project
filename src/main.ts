@@ -15,7 +15,7 @@ async function bootstrap() {
     .setTitle('Client-API')
     .setDescription('API documentation for client')
     .setVersion('2.0')
-    .addBearerAuth()
+    //.addBearerAuth()
     .build();
   const clientDocument = SwaggerModule.createDocument(app, clientSwagger, {
     include: [ClientModule],
